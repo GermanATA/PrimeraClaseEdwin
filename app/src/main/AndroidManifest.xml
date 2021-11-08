@@ -12,7 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
+            <intent-filter> <!--Indica que se abre esta actividad (LAUNCHER)-->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
