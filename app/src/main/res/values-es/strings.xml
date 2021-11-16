@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrimeraClaseEdwin</string>
+    <string name="superman">Superman</string>
+    <string name="nombre">Nombre: Clark Kent</string>
+    <string name="poderes">Poderes: Super fuerza, vuelo, invulnerabilidad, super velocidad, visión calor, aliento congelante, visión rayos-X, super oido, factor de curacion</string>
+    <string name="descripcion_foto">Foto Superman</string>
+</resources>

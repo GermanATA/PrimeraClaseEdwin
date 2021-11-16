@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PrimeraClaseEdwin</string>
     <string name="superman">Superman</string>
-    <string name="nombre">Clark Kent</string>
+    <string name="nombre">Name: Clark Kent</string>
+    <string name="poderes">Powers: Super strength, flight, invulnerability, super speed, heat vision, freeze breath, x-ray vision, superhuman hearing, healing factor</string>
+    <string name="descripcion_foto">Foto Superman</string>
 </resources>
