@@ -5,4 +5,17 @@
     <string name="nombre">Nombre: Clark Kent</string>
     <string name="poderes">Poderes: Super fuerza, vuelo, invulnerabilidad, super velocidad, visión calor, aliento congelante, visión rayos-X, super oido, factor de curacion</string>
     <string name="descripcion_foto">Foto Superman</string>
+    <string name="registro">Registro de un SuperHeroe</string>
+    <string name="registrar">Registrar</string>
+    <string name="name">Nombre: </string>
+    <string name="estatura">Estatura: </string>
+    <string name="nombre_para_registro">Nombre: %s,\n Estatura: %f,\n Género: %s,\n Poderes: %s,\n Ciudad: %s</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="nombre_poderes">Poderes: </string>
+    <string name="super_fuerza">Super Fuerza</string>
+    <string name="velocidad">Super Velocidad</string>
+    <string name="telequinesis">Telequinesis</string>
+    <string name="ciudad">Ciudad:</string>
 </resources>
