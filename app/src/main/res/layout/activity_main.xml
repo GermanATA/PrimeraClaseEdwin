@@ -35,12 +35,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
+            android:contentDescription="@string/descripcion_foto"
             android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/profile_superman"
-            android:contentDescription="@string/descripcion_foto" />
+            tools:srcCompat="@drawable/superman2" />
 
         <TextView
             android:id="@+id/textView2"
