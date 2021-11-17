@@ -39,7 +39,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/Profile_Superman"
+            app:srcCompat="@drawable/profile_superman"
             android:contentDescription="@string/descripcion_foto" />
 
         <TextView
