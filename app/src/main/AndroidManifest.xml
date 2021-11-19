@@ -10,18 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeraClaseEdwin">
         <activity
-            android:name=".RegistroSuperHeroeActivity"
-            android:exported="true" >
-            <intent-filter> <!-- Indica que se abre esta actividad (LAUNCHER) -->
+            android:name=".ListSuperHeroesActivity"
+            android:exported="true">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".RegistroSuperHeroeActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

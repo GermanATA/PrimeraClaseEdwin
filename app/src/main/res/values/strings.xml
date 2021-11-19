@@ -17,7 +17,7 @@
     <string name="velocidad">Super Velocidad</string>
     <string name="telequinesis">Telequinesis</string>
     <string name="ciudad">Ciudad:</string>
-    
+
     <string-array name="lista_ciudades">
         <item>Ciudad Central</item>
         <item>Ciudad Gótica</item>
