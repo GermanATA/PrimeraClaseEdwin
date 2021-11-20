@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
-class SuperHeroesAdapter(private val superheroesList: ArrayList<SuperHeroe>): RecyclerView.Adapter<SuperHeroesAdapter.ViewHolder>() { //dentro de <> coloco un viewholder que gestiona el contenido de la vista
+class SuperHeroesAdapter(private val superheroesList: ArrayList<SuperHeroeItem>): RecyclerView.Adapter<SuperHeroesAdapter.ViewHolder>() { //dentro de <> coloco un viewholder que gestiona el contenido de la vista
 
     //Cual es nuestro Layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,10 +31,10 @@ class SuperHeroesAdapter(private val superheroesList: ArrayList<SuperHeroe>): Re
         private var aliasTextView: TextView = itemView.findViewById(R.id.textView8)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.imageView2)
 
-        fun bind(superHeroe: SuperHeroe){
+        fun bind(superHeroe: SuperHeroeItem){
             nameTextView.text = superHeroe.nombre
             aliasTextView.text = superHeroe.alias
-            //picture
+            Picasso.get().load(superHeroe.urlPicture).into(pictureImageView)
         }
     }
 }
