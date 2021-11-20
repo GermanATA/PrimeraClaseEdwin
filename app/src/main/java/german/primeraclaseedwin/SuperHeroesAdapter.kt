@@ -32,8 +32,8 @@ class SuperHeroesAdapter(private val superheroesList: ArrayList<SuperHeroeItem>)
         private var pictureImageView: ImageView = itemView.findViewById(R.id.imageView2)
 
         fun bind(superHeroe: SuperHeroeItem){
-            nameTextView.text = superHeroe.nombre
-            aliasTextView.text = superHeroe.alias
+            nameTextView.text = superHeroe.name
+            aliasTextView.text = superHeroe.size.toString()
             Picasso.get().load(superHeroe.urlPicture).into(pictureImageView)
         }
     }

@@ -4,18 +4,20 @@ package german.primeraclaseedwin
 import com.google.gson.annotations.SerializedName
 
 data class SuperHeroeItem(
-    @SerializedName("alias") //como se llama el dato en json
-    val alias: String,            //Como se llama el dato en mi aplicacion
+    @SerializedName("alias")//nombre que viene de json
+    val alias: String, //nombre en mi aplicacion
     @SerializedName("city")
-    val ciudad: String,
+    val city: String,
     @SerializedName("facebook")
     val facebook: String,
     @SerializedName("name")
-    val nombre: String,
+    val name: String,
     @SerializedName("occupation")
-    val ocupacion: String,
+    val occupation: String,
     @SerializedName("powers")
-    val poderes: String,
+    val powers: String,
+    @SerializedName("size")
+    val size: Double,
     @SerializedName("urlPicture")
     val urlPicture: String
 )
