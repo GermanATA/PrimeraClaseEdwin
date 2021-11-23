@@ -17,5 +17,11 @@
     <string name="super_fuerza">Super Fuerza</string>
     <string name="velocidad">Super Velocidad</string>
     <string name="telequinesis">Telequinesis</string>
-    <string name="ciudad">Ciudad:</string>
+    <string name="ciudad">Ciudad :</string>
+    <string name="valor_ciudad">Metropolis</string>
+    <string name="ocupacion">Ocupacion: </string>
+    <string name="valor_ocupacion">Reportero: </string>
+    <string name="facebook">"Facebook: "</string>
+    <string name="valor_estatura">1.95</string>
+    <string name="valor_facebook">https://www.facebook.com/superman</string>
 </resources>

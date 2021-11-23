@@ -1,12 +1,16 @@
-package german.primeraclaseedwin
+package german.primeraclaseedwin.list
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import androidx.recyclerview.widget.DividerItemDecoration
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import german.primeraclaseedwin.R
+import german.primeraclaseedwin.detalle.DetalleActivity
+import german.primeraclaseedwin.model.SuperHeroe
+import german.primeraclaseedwin.model.SuperHeroeItem
 
 class ListSuperHeroesActivity : AppCompatActivity() {
 
@@ -24,13 +28,22 @@ class ListSuperHeroesActivity : AppCompatActivity() {
 
         listaSuperheroes=loadMockSuperHeroesFromJson()
 
-        superheroesAdapter = SuperHeroesAdapter(listaSuperheroes)
+        superheroesAdapter = SuperHeroesAdapter(listaSuperheroes,onItemClicked = {onSuperheroeClicked(it)} )
 
         superheroesRecyclerview.apply{
             layoutManager = LinearLayoutManager(context)
             adapter = superheroesAdapter
             setHasFixedSize(false)
         }
+    }
+
+    private fun onSuperheroeClicked(superheroe: SuperHeroeItem) {
+
+        Log.d("alias",superheroe.alias)
+        val intent = Intent(this,DetalleActivity::class.java)
+        intent.putExtra("superheroe",superheroe)
+        startActivity(intent)
+
     }
 
     private fun loadMockSuperHeroesFromJson(): ArrayList<SuperHeroeItem> {

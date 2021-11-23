@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeraClaseEdwin">
         <activity
-            android:name=".ListSuperHeroesActivity"
+            android:name=".list.ListSuperHeroesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistroSuperHeroeActivity"
+            android:name=".registro.RegistroSuperHeroeActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".detalle.DetalleActivity"
             android:exported="true"></activity>
     </application>
 

@@ -1,4 +1,4 @@
-package german.primeraclaseedwin
+package german.primeraclaseedwin.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
+import german.primeraclaseedwin.R
+import german.primeraclaseedwin.model.SuperHeroeItem
 
-class SuperHeroesAdapter(private val superheroesList: ArrayList<SuperHeroeItem>): RecyclerView.Adapter<SuperHeroesAdapter.ViewHolder>() { //dentro de <> coloco un viewholder que gestiona el contenido de la vista
+class SuperHeroesAdapter(
+    private val superheroesList: ArrayList<SuperHeroeItem>,
+    private val onItemClicked: (SuperHeroeItem)->Unit //Estoy mandando un tipo de dato, podria ser un entero o un booleano
+    ): RecyclerView.Adapter<SuperHeroesAdapter.ViewHolder>() { //dentro de <> coloco un viewholder que gestiona el contenido de la vista
 
     //Cual es nuestro Layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -18,6 +23,7 @@ class SuperHeroesAdapter(private val superheroesList: ArrayList<SuperHeroeItem>)
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) { //cuantas veses va a iterar de acuerdo al numero de heroes en la lista
         val superHeroe = superheroesList[position]
+        holder.itemView.setOnClickListener{onItemClicked(superheroesList[position])}
         holder.bind(superHeroe)
     }
 

@@ -1,4 +1,4 @@
-package german.primeraclaseedwin
+package german.primeraclaseedwin.registro
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import com.google.android.material.textfield.TextInputEditText
+import german.primeraclaseedwin.detalle.DetalleActivity
+import german.primeraclaseedwin.R
 
 class RegistroSuperHeroeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,7 +62,7 @@ class RegistroSuperHeroeActivity : AppCompatActivity() {
 
                 //val superheroe = SuperHeroe(nombre,estatura,poderes,ciudad,genero)
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, DetalleActivity::class.java)
                 intent.putExtra("nombre",nombre)
                 startActivity(intent)
             }

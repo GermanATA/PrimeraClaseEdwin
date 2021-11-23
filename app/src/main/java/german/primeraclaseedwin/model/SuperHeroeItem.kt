@@ -1,7 +1,8 @@
-package german.primeraclaseedwin
+package german.primeraclaseedwin.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class SuperHeroeItem(
     @SerializedName("alias")//nombre que viene de json
@@ -20,4 +21,4 @@ data class SuperHeroeItem(
     val size: Double,
     @SerializedName("urlPicture")
     val urlPicture: String
-)
+) : Serializable
