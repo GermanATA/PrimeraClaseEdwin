@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PrimeraClaseEdwin"
 include ':app'
+include ':dccomics'

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DCComics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="superman">Superman</string>
+    <string name="nombre">Name: Clark Kent</string>
+    <string name="poderes">Powers: Super strength, flight, invulnerability, super speed, heat vision, freeze breath, x-ray vision, superhuman hearing, healing factor</string>
+    <string name="descripcion_foto">Foto Superman</string>
+    <string name="registro">Registro de un SuperHeroe</string>
+    <string name="registrar">Registrar</string>
+    <string name="name">Nombre: </string>
+    <string name="estatura">Estatura: </string>
+    <string name="nombre_para_registro">Nombre: %s,\n Estatura: %f,\n Género: %s,\n Poderes: %s,\n Ciudad: %s</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="nombre_poderes">Poderes: </string>
+    <string name="super_fuerza">Super Fuerza</string>
+    <string name="velocidad">Super Velocidad</string>
+    <string name="telequinesis">Telequinesis</string>
+    <string name="ciudad">Ciudad: </string>
+    <string name="valor_ciudad">Metropolis</string>
+    <string name="ocupacion">Ocupacion: </string>
+    <string name="valor_ocupacion">Reportero: </string>
+    <string name="facebook">"Facebook: "</string>
+    <string name="valor_estatura">1.95</string>
+    <string name="valor_facebook">https://www.facebook.com/superman</string>
+
+    <string-array name="lista_ciudades">
+        <item>Ciudad Central</item>
+        <item>Ciudad Gótica</item>
+        <item>Temiscira</item>
+        <item>Metrópolis</item>
+    </string-array>
+</resources>

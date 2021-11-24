@@ -1,4 +1,4 @@
-package german.primeraclaseedwin.list
+package german.dccomics.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import german.primeraclaseedwin.R
-import german.primeraclaseedwin.model.SuperHeroeItem
+import german.dccomics.R
+import german.dccomics.model.SuperHeroeItem
+
 
 class SuperHeroesAdapter(//En el Adapter es donde yo programo el onclick
     private val superheroesList: ArrayList<SuperHeroeItem>,

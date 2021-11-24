@@ -22,17 +22,28 @@ class DetalleActivity : AppCompatActivity() {
         var SH: SuperHeroeItem = intent.extras?.getSerializable("superheroe") as SuperHeroeItem
 
         with(detallebinding){
-            nameTextView.text = SH.name
-            aliasTextView.text = SH.alias
-            cityTextView.text = SH.city
-            ocupacionTextView.text=SH.occupation
-            estaturaTextView.text = SH.size.toString()
-            facebookTextView.text = SH.facebook
-            powersTextView.text = SH.powers
+            if (nameTextView != null) {
+                nameTextView.text = SH.name
+            }
+            if (aliasTextView != null) {
+                aliasTextView.text = SH.alias
+            }
+            if (cityTextView != null) {
+                cityTextView.text = SH.city
+            }
+            if (ocupacionTextView != null) {
+                ocupacionTextView.text=SH.occupation
+            }
+            if (estaturaTextView != null) {
+                estaturaTextView.text = SH.size.toString()
+            }
+            if (facebookTextView != null) {
+                facebookTextView.text = SH.facebook
+            }
+            if (powersTextView != null) {
+                powersTextView.text = SH.powers
+            }
             Picasso.get().load(SH.urlPicture).into(pictureImageView)
-
-
-
         }
 
     }
