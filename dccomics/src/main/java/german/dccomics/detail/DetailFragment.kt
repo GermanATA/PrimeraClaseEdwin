@@ -5,12 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
+import com.squareup.picasso.Picasso
 import german.dccomics.databinding.FragmentDetailBinding
 
 
 class DetailFragment : Fragment() {
 
        private lateinit var detailBinding: FragmentDetailBinding
+       private val args : DetailFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,5 +21,22 @@ class DetailFragment : Fragment() {
     ): View {
            detailBinding = FragmentDetailBinding.inflate(inflater, container, false)
            return detailBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val superheroe = args.superheroe
+
+        with(detailBinding)
+        {
+            nameTextView.text = superheroe.name
+            aliasTextView.text = superheroe.alias
+            cityTextView.text = superheroe.city
+            ocupacionTextView.text = superheroe.occupation
+            estaturaTextView.text = superheroe.size.toString()
+            facebookTextView.text = superheroe.facebook
+            powersTextView.text = superheroe.powers
+            Picasso.get().load(superheroe.urlPicture).into(pictureImageView)
+        }
     }
 }

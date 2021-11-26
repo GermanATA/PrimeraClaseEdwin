@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import german.dccomics.databinding.FragmentListBinding
 import german.dccomics.model.SuperHeroe
@@ -29,9 +31,16 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         listaSuperheroes=loadMockSuperHeroesFromJson()
         superheroesAdapter = SuperHeroesAdapter(listaSuperheroes,onItemClicked = {onSuperheroeClicked(it)} )
+
+        listBinding.superheroesRecyclerView.apply{
+            layoutManager = LinearLayoutManager(context)
+            adapter = superheroesAdapter
+            setHasFixedSize(false)
+        }
     }
 
     private fun onSuperheroeClicked(superheroe: SuperHeroeItem) {
+        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(superheroe = superheroe))//el primer super heroe es una etiqueta, en caso que tubiera que mandar varias cosas, el segundo es mi superheroe
 
     }
 
