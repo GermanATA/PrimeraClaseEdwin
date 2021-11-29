@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import german.dccomics.databinding.FragmentListBinding
+import german.dccomics.main.MainActivity
 import german.dccomics.model.SuperHeroe
 import german.dccomics.model.SuperHeroeItem
 
@@ -37,6 +38,7 @@ class ListFragment : Fragment() {
             adapter = superheroesAdapter
             setHasFixedSize(false)
         }
+        (activity as MainActivity?)?.hideIcon()
     }
 
     private fun onSuperheroeClicked(superheroe: SuperHeroeItem) {
