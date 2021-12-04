@@ -38,7 +38,7 @@ class ListFragment : Fragment() {
             adapter = superheroesAdapter
             setHasFixedSize(false)
         }
-        (activity as MainActivity?)?.hideIcon()
+        //(activity as MainActivity?)?.hideIcon() no se usa en Drawer Activity y por eso se comenta
     }
 
     private fun onSuperheroeClicked(superheroe: SuperHeroeItem) {

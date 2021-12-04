@@ -11,26 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeraClaseEdwin">
+
+        <activity
+            android:name=".TabbedActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/Theme.PrimeraClaseEdwin.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".drawer.DrawerActivity"
             android:exported="true"
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.PrimeraClaseEdwin.NoActionBar">
         </activity>
+
         <activity
             android:name=".bottom.BottomActivity"
             android:exported="true"
-            android:label="@string/title_activity_bottom">
-        </activity>
+            android:label="@string/title_activity_bottom" />
+
         <activity
             android:name=".main.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
