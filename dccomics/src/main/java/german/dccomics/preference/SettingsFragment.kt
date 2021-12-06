@@ -16,7 +16,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-       // (activity as MainActivity?)?.showIcon() no se usa en Drawer Activity y por eso se comenta
+       (activity as MainActivity?)?.showIcon()// no se usa en Drawer Activity y por eso se comenta
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

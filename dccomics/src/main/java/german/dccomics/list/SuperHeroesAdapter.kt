@@ -33,6 +33,13 @@ class SuperHeroesAdapter(//En el Adapter es donde yo programo el onclick
         return superheroesList.size
     }
 
+    fun appendItems(newItems: ArrayList<SuperHeroeItem>) {
+        superheroesList.clear()
+        superheroesList.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){ //aca vamos a "pintar"
         private var nameTextView: TextView = itemView.findViewById(R.id.textView7)
         private var aliasTextView: TextView = itemView.findViewById(R.id.textView8)
