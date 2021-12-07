@@ -31,7 +31,9 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        listViewModel.loadMockSuperHeroesFromJson(context?.assets?.open("superheroes.json"))
+        //listViewModel.loadMockSuperHeroesFromJson(context?.assets?.open("superheroes.json"))
+
+        listViewModel.getSuperHeroesFromServer()
 
         listViewModel.onSuperheroesLoaded.observe(viewLifecycleOwner,{result ->
             onSuperheroesLoadedSubscribe(result)
